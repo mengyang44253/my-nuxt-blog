@@ -1,7 +1,6 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'DylanBlog',
+    title: 'Dylan Blog',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,7 +16,8 @@ export default {
   },
 
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/css/index.less'
   ],
 
   plugins: [
@@ -31,22 +31,15 @@ export default {
 
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
+  styleResources:{
+    less:[
+      "./assets/css/variable.less"
+    ]
+  },
 
-  axios: {
-    proxy:true,
-    prefix:'/api',
-    credential:true
-  },
-  proxy:{
-    "/api":{
-      target:"http://localhost:8000",
-      pathRewrite:{
-        "^api":"",
-        changeOrigin:true
-      }
-    }
-  },
+  axios: {},
 
   build: {
     transpile: [/^element-ui/],

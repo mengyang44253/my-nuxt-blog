@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "defaultSider"
+  name: "myIcon"
 }
 </script>
 

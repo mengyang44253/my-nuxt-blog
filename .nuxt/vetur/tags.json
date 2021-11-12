@@ -1,0 +1,20 @@
+{
+  "ArticleMyIcon": {
+    "description": "Auto imported from components/article/myIcon.vue"
+  },
+  "LayoutDefaultFooter": {
+    "description": "Auto imported from components/layout/defaultFooter.vue"
+  },
+  "LayoutDefaultHeader": {
+    "description": "Auto imported from components/layout/defaultHeader.vue"
+  },
+  "LayoutDefaultSider": {
+    "description": "Auto imported from components/layout/defaultSider.vue"
+  },
+  "SideComment": {
+    "description": "Auto imported from components/side/comment.vue"
+  },
+  "SideHotArticle": {
+    "description": "Auto imported from components/side/hotArticle.vue"
+  }
+}
