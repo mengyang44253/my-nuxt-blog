@@ -1,9 +1,26 @@
 [
   {
+    "name": "detail",
+    "path": "/detail",
+    "component": "C:\\\\Users\\\\my466\\\\Desktop\\\\my\\\\my-nuxt-blog\\\\pages\\\\detail\\\\index.vue",
+    "chunkName": "pages/detail/index"
+  },
+  {
+    "name": "tags",
+    "path": "/tags",
+    "component": "C:\\\\Users\\\\my466\\\\Desktop\\\\my\\\\my-nuxt-blog\\\\pages\\\\tags\\\\index.vue",
+    "chunkName": "pages/tags/index"
+  },
+  {
+    "name": "detail-id",
+    "path": "/detail/:id",
+    "component": "C:\\\\Users\\\\my466\\\\Desktop\\\\my\\\\my-nuxt-blog\\\\pages\\\\detail\\\\_id.vue",
+    "chunkName": "pages/detail/_id"
+  },
+  {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\my466\\\\Desktop\\\\my-nuxt-blog\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_c3c06d40"
+    "component": "C:\\\\Users\\\\my466\\\\Desktop\\\\my\\\\my-nuxt-blog\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]

@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -13,8 +13,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_56f0a623 from 'nuxt_plugin_plugin_56f0a623' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_1d6df6c6 from 'nuxt_plugin_axios_1d6df6c6' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_11c1cc41 from 'nuxt_plugin_plugin_11c1cc41' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_9dbe4c38 from 'nuxt_plugin_axios_9dbe4c38' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_elementui_d905880e from 'nuxt_plugin_elementui_d905880e' // Source: ..\\plugins\\element-ui (mode: 'all')
 
 // Component: <ClientOnly>
@@ -212,12 +212,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_56f0a623 === 'function') {
-    await nuxt_plugin_plugin_56f0a623(app.context, inject)
+  if (typeof nuxt_plugin_plugin_11c1cc41 === 'function') {
+    await nuxt_plugin_plugin_11c1cc41(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_1d6df6c6 === 'function') {
-    await nuxt_plugin_axios_1d6df6c6(app.context, inject)
+  if (typeof nuxt_plugin_axios_9dbe4c38 === 'function') {
+    await nuxt_plugin_axios_9dbe4c38(app.context, inject)
   }
 
   if (typeof nuxt_plugin_elementui_d905880e === 'function') {

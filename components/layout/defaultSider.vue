@@ -101,26 +101,84 @@
 <script>
 
 import {mapState} from 'vuex'
+
 export default {
   name: "defaultSide",
-  components:{
+  components: {},
+  data() {
+    return {}
+  },
+  computed: mapState(["articleCount", "articleRead", "commentCount", "articlePraise", "newComment", "sideTag", "hotArticle"]),
+  mounted() {
 
   },
-  data(){
-    return {
-
-    }
-  },
-  computed:mapState(),
-  mounted(){
-
-  },
-  methods:{
-
-  }
+  methods: {}
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+.placard {
+  .user {
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid #cccccc;
 
+    .top {
+      display: flex;
+      margin-bottom: 20px;
+
+      .right {
+        padding-left: 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name {
+          color: @color-theme;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 20px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .num {
+          font-size: 14px;
+          font-weight: bold;
+          color: @color-theme;
+        }
+
+        .text {
+          font-size: 14px;
+          font-weight: 400;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+
+.tag {
+  .tag-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      margin: 5px;
+    }
+  }
+}
+
+.plr20 {
+  padding: 0 20px;
+}
 </style>

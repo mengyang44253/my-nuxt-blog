@@ -35,8 +35,6 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit({commit, dispatch}, {req}) {
-    console.log(commit)
-    console.log(1111111111)
     //获取nav数据
 
   }

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } from 'ufo'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
@@ -10,9 +10,11 @@ import '..\\node_modules\\element-ui\\lib\\theme-chalk\\index.css'
 
 import '..\\assets\\css\\index.less'
 
-import _6f6c098b from './layouts/default.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
+import _77430317 from '..\\layouts\\empty.vue'
+import _960f9644 from '..\\layouts\\notSider.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_default": sanitizeComponent(_6f6c098b),"_empty": sanitizeComponent(_77430317),"_notSider": sanitizeComponent(_960f9644) }
 
 export default {
   render (h, props) {

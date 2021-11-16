@@ -1,6 +1,24 @@
 {
+  "ArticleDetail": {
+    "description": "Auto imported from components/article/detail.vue"
+  },
   "ArticleMyIcon": {
     "description": "Auto imported from components/article/myIcon.vue"
+  },
+  "ArticleReward": {
+    "description": "Auto imported from components/article/reward.vue"
+  },
+  "CommentForm": {
+    "description": "Auto imported from components/comment/commentForm.vue"
+  },
+  "CommentItem": {
+    "description": "Auto imported from components/comment/commentItem.vue"
+  },
+  "SideComment": {
+    "description": "Auto imported from components/side/comment.vue"
+  },
+  "SideHotArticle": {
+    "description": "Auto imported from components/side/hotArticle.vue"
   },
   "LayoutDefaultFooter": {
     "description": "Auto imported from components/layout/defaultFooter.vue"
@@ -10,11 +28,5 @@
   },
   "LayoutDefaultSider": {
     "description": "Auto imported from components/layout/defaultSider.vue"
-  },
-  "SideComment": {
-    "description": "Auto imported from components/side/comment.vue"
-  },
-  "SideHotArticle": {
-    "description": "Auto imported from components/side/hotArticle.vue"
   }
 }

@@ -93,7 +93,7 @@ export default {
         .comment-time{
           font-size: 16px;
           font-weight: 400;
-          color: #CCCCC;
+          color: #CCCCCC;
         }
       }
       .comment-content{
