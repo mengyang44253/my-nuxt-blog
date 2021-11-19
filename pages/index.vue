@@ -25,15 +25,15 @@ export default {
     let total = 0;
     let status=3
     let params = {};
-    params.nopage = 0;
+    params.pagination = 0;
     params.start = currentPage-1;
     params.limit = 10;
     params.status=status
-    // let res = await store.dispatch("Article/getArticleList",params);
-    // if (res.success) {
-    //   articleList = res.data;
-    //   total = res.count;
-    // }
+    let res = await store.dispatch("Article/getArticleList",params);
+    if (res.success) {
+      articleList = res.data;
+      total = res.count;
+    }
     return {
       articleList,
       total,

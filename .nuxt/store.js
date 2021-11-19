@@ -19,15 +19,17 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
-  resolveStoreModules(require('..\\store\\article.js'), 'article.js')
+  resolveStoreModules(require('..\\store\\Article.js'), 'Article.js')
+  resolveStoreModules(require('..\\store\\Publish.js'), 'Publish.js')
 
   // If the environment supports hot reloading...
 
   if (process.client && module.hot) {
     // Whenever any Vuex module is updated...
     module.hot.accept([
-      '..\\store\\article.js',
+      '..\\store\\Article.js',
       '..\\store\\index.js',
+      '..\\store\\Publish.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()

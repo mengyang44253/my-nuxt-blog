@@ -21,7 +21,18 @@ export default {
   ],
 
   plugins: [
-    '@/plugins/element-ui'
+    {
+      src: '~/plugins/axios',
+      ssr: true
+    },
+    {
+      src: "~/plugins/element-ui",
+      ssr: true
+    },
+    {
+      src: '~/plugins/libs',
+      ssr: true
+    },
   ],
 
   components: true,

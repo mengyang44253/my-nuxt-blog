@@ -1,13 +1,13 @@
-export { default as ArticleDetail } from '../..\\components\\article\\detail.vue'
-export { default as ArticleMyIcon } from '../..\\components\\article\\myIcon.vue'
-export { default as ArticleReward } from '../..\\components\\article\\reward.vue'
-export { default as CommentForm } from '../..\\components\\comment\\commentForm.vue'
-export { default as CommentItem } from '../..\\components\\comment\\commentItem.vue'
 export { default as SideComment } from '../..\\components\\side\\comment.vue'
 export { default as SideHotArticle } from '../..\\components\\side\\hotArticle.vue'
 export { default as LayoutDefaultFooter } from '../..\\components\\layout\\defaultFooter.vue'
 export { default as LayoutDefaultHeader } from '../..\\components\\layout\\defaultHeader.vue'
 export { default as LayoutDefaultSider } from '../..\\components\\layout\\defaultSider.vue'
+export { default as CommentForm } from '../..\\components\\comment\\commentForm.vue'
+export { default as CommentItem } from '../..\\components\\comment\\commentItem.vue'
+export { default as ArticleDetail } from '../..\\components\\article\\detail.vue'
+export { default as ArticleMyIcon } from '../..\\components\\article\\myIcon.vue'
+export { default as ArticleReward } from '../..\\components\\article\\reward.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
